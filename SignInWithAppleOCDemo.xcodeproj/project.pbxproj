@@ -14,6 +14,7 @@
 		9684553F230B98F800C58559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9684553E230B98F800C58559 /* Assets.xcassets */; };
 		96845542230B98F800C58559 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96845540230B98F800C58559 /* LaunchScreen.storyboard */; };
 		96845545230B98F800C58559 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96845544230B98F800C58559 /* main.m */; };
+		9684554D230B99EB00C58559 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9684554C230B99EB00C58559 /* AuthenticationServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,10 @@
 		96845541230B98F800C58559 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96845543230B98F800C58559 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96845544230B98F800C58559 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9684554C230B99EB00C58559 /* AuthenticationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AuthenticationServices.framework; path = System/Library/Frameworks/AuthenticationServices.framework; sourceTree = SDKROOT; };
+		9684554E230B9BA100C58559 /* SignInAppleDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignInAppleDefine.h; sourceTree = "<group>"; };
+		9684554F230BC59200C58559 /* SignInWithAppleOCDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignInWithAppleOCDemo.entitlements; sourceTree = "<group>"; };
+		96845550230BDB6A00C58559 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9684554D230B99EB00C58559 /* AuthenticationServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +53,7 @@
 			children = (
 				96845531230B98F700C58559 /* SignInWithAppleOCDemo */,
 				96845530230B98F700C58559 /* Products */,
+				9684554B230B99EB00C58559 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +68,8 @@
 		96845531230B98F700C58559 /* SignInWithAppleOCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				96845550230BDB6A00C58559 /* README.md */,
+				9684554F230BC59200C58559 /* SignInWithAppleOCDemo.entitlements */,
 				96845532230B98F700C58559 /* AppDelegate.h */,
 				96845533230B98F700C58559 /* AppDelegate.m */,
 				96845535230B98F700C58559 /* SceneDelegate.h */,
@@ -72,8 +81,17 @@
 				96845540230B98F800C58559 /* LaunchScreen.storyboard */,
 				96845543230B98F800C58559 /* Info.plist */,
 				96845544230B98F800C58559 /* main.m */,
+				9684554E230B9BA100C58559 /* SignInAppleDefine.h */,
 			);
 			path = SignInWithAppleOCDemo;
+			sourceTree = "<group>";
+		};
+		9684554B230B99EB00C58559 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9684554C230B99EB00C58559 /* AuthenticationServices.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +307,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInWithAppleOCDemo/SignInWithAppleOCDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7XN28BYYM2;
 				INFOPLIST_FILE = SignInWithAppleOCDemo/Info.plist;
@@ -298,6 +318,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.binxiaomo.SignInWithAppleOCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -306,6 +327,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SignInWithAppleOCDemo/SignInWithAppleOCDemo.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7XN28BYYM2;
 				INFOPLIST_FILE = SignInWithAppleOCDemo/Info.plist;
@@ -315,6 +338,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.binxiaomo.SignInWithAppleOCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
