@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		96845534230B98F700C58559 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96845533230B98F700C58559 /* AppDelegate.m */; };
 		96845537230B98F700C58559 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96845536230B98F700C58559 /* SceneDelegate.m */; };
-		9684553A230B98F700C58559 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96845539230B98F700C58559 /* ViewController.m */; };
 		9684553D230B98F700C58559 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9684553B230B98F700C58559 /* Main.storyboard */; };
 		9684553F230B98F800C58559 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9684553E230B98F800C58559 /* Assets.xcassets */; };
 		96845542230B98F800C58559 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96845540230B98F800C58559 /* LaunchScreen.storyboard */; };
 		96845545230B98F800C58559 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96845544230B98F800C58559 /* main.m */; };
 		9684554D230B99EB00C58559 /* AuthenticationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9684554C230B99EB00C58559 /* AuthenticationServices.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		96CDF44123138DA800336838 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96845539230B98F700C58559 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -164,9 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9684553A230B98F700C58559 /* ViewController.m in Sources */,
 				96845534230B98F700C58559 /* AppDelegate.m in Sources */,
 				96845545230B98F800C58559 /* main.m in Sources */,
+				96CDF44123138DA800336838 /* ViewController.m in Sources */,
 				96845537230B98F700C58559 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
